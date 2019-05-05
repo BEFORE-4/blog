@@ -18,6 +18,11 @@ public class HomeController {
         return "test";
     }
 
+    @RequestMapping(value = "",method = RequestMethod.GET)
+    public String home1(){
+        return "index";
+    }
+
     @ResponseBody
     @RequestMapping(value = "book", method = RequestMethod.GET)
     public String getBook(){

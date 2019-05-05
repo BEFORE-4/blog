@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../js/jquery-3.3.1.min.js"></script>
+</head>
+<body>
+<div id="content" style="display: none">
+    test
+    <div style="background-color: red;height: 200px" id="div">abc</div>
+
+    <div style="height: 300px" id="guess">猜猜看</div>
+</div>
+<div id="img" >
+    <img src="../image/img.jpg">
+</div>
+</body>
+</html>
+<script type="text/javascript">
+    $("#guess").on("click",test);
+    function test() {
+        $.ajax({
+            type:"get",
+            url:"/test/getTest",
+            data:{},
+            async: false,
+            success:function (data) {
+                $("#content").hide();
+                $("#img").show();
+                debugger;
+                console.log(data);
+                $("#div").html(data.age);
+            }
+        });
+    }
+</script>
