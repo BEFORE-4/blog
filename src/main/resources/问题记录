@@ -1,0 +1,7 @@
+1. 找不到元素‘beans’的声明
+在xml中需要对beans标签的配置文件头部标注正确
+    xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema"
+
+2.

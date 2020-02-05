@@ -1,4 +1,2 @@
-demo:
-  book:
-    name:user
-    writer:age
+friends: {lastName: zhangsan,age: 18}
+
